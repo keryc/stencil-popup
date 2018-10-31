@@ -24,10 +24,9 @@ Stencil Popup is a standalone component for facilitate the opening of pop-up win
 
 ## Properties
 
-| Property       | Attribute       | Description                                                                                                                                                                                    | Type                                                                       |
-| -------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-                                                                |
- | `config`   | --              | Configuration of the pop-up window and other things.                                                                                                                                                        | `object={ ... }`                                     |
+| Property       | Attribute       | Description | Type |
+| -------------- | --------------- | -------------- | -------------- |
+| `config`   | --  | Configuration of the pop-up window and other things.  | `object={ ... }`  |                                   |
 
 ## Properties (example): 
 ```
