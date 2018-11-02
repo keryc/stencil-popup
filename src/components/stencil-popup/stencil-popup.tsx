@@ -1,4 +1,4 @@
-import { Component, Event ,EventEmitter, Method, Prop, State, Listen} from '@stencil/core';
+import { Component, Event ,EventEmitter, Method, Prop, State, Listen, Element} from '@stencil/core';
 
 @Component({
   tag: 'stencil-popup',
@@ -7,10 +7,10 @@ import { Component, Event ,EventEmitter, Method, Prop, State, Listen} from '@ste
 })
 export class StencilPopup {
   dev: boolean=false;
+  @Element() el: HTMLElement;
 
   popup: any;
   temp_config: object={
-    button_text: "Abrir Popup",
     type: "_blank",
     popupOptions: {
       width: 600, 
@@ -116,16 +116,15 @@ export class StencilPopup {
 
   render() {
     this.new_config = Object.assign({}, this.temp_config, this.config);
-
     if (this.dev){
       return (
         <button onClick={() => this.open("https://kdiaz.me/")}>
-          <buttom-text>{ this.new_config["button_text"] }</buttom-text>
+          <text>{ this.el.innerHTML }</text>
         </button>
       )
     }else{
       return (
-        <buttom-text>{ this.new_config["button_text"] }</buttom-text>
+        <text>{ this.el.innerHTML }</text>
       )
     }
     
