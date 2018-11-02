@@ -1,6 +1,6 @@
 {
   "name": "stencil-popup",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Stencil Popup",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "~0.15.1"
+    "@stencil/core": "^0.15.2"
   },
   "repository": {
     "type": "git",
