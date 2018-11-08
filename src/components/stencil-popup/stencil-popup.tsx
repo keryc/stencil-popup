@@ -6,7 +6,7 @@ import { Component, Event ,EventEmitter, Method, Prop, State, Listen, Element} f
   shadow: true
 })
 export class StencilPopup {
-  dev: boolean=true;
+  @Prop() dev: boolean=false;
 
   @Element() el: HTMLElement;
 
@@ -26,12 +26,6 @@ export class StencilPopup {
   @Prop() config: object={};
 
   @State() new_config: object={};
-
-  constructor(){
-    if (process.env.NODE_ENV === 'production') {
-      this.dev = false
-    }
-  }
 
   stringifyOptions(dict) {
     var str = [];

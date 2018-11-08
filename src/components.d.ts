@@ -14,10 +14,12 @@ export namespace Components {
 
   interface StencilPopup {
     'config': object;
+    'dev': boolean;
     'open': (url: string, redirectUri?: string) => void;
   }
   interface StencilPopupAttributes extends StencilHTMLAttributes {
     'config'?: object;
+    'dev'?: boolean;
     'onClosedPopup'?: (event: CustomEvent) => void;
     'onRedirectPopup'?: (event: CustomEvent) => void;
   }
