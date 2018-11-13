@@ -1,6 +1,6 @@
 {
   "name": "stencil-popup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Stencil Popup",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
