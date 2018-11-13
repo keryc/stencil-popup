@@ -43,6 +43,7 @@ export class StencilPopup {
   }
 
   getParams(url) {
+    url = url.replace("?#","?");
     var params = {};
     var parser = document.createElement('a');
     parser.href = url;
